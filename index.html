@@ -127,25 +127,25 @@
 
         /* =========================== container =========================== */
 
-        #mojastrona .container{
+        .rudygamesv2-container{
             width: 96%;
             margin: 0 auto;
         }
 
         @media (min-width: 768px){
-            #mojastrona .container{
+            .rudygamesv2-container{
                 width: 720px;
             }
         }
 
         @media (min-width: 1024px){
-            #mojastrona .container{
+            .rudygamesv2-container{
                 width: 960px;
             }
         }
 
         @media (min-width: 1440px){
-            #mojastrona .container{
+            .rudygamesv2-container{
                 width: 1100px;
             }
         }
@@ -170,7 +170,7 @@
             background-color: rgba(0, 0, 0,.5);
         }
 
-        .home-shadow .container{
+        .home-shadow .rudygamesv2-container{
             display: flex;
             align-items: center;
             height: 100% ;
@@ -545,7 +545,7 @@
     
     <section class="home" id="home">
         <div class="home-shadow">
-            <div class="container">
+            <div class="rudygamesv2-container">
                 <div class="home-text">
                     <div class="hero-text">
                         <h1>Walka <span></span></h1>
@@ -562,7 +562,7 @@
 
     
     <section class="team" id="team">
-        <div class="container">
+        <div class="rudygamesv2-container">
             <h1>Drużynę prezentują:</h1>
         
             <div class="team-list">
@@ -662,23 +662,8 @@
             <a class="atribute" href="https://mockupfree.co/product/free-soccer-jersey-mockup" target="_blank">Do zrobienia zdjęć koszulek był wykorzystany szablon od MockupFree.co</a>
         </div>
     </section>
-
-
-<!-- =========================== script animated bar =========================== -->
-    <script>
-        const updateBar = () => {
-            const bodyEl = document.body;
-            const barEl = document.querySelector(".bar");
-            let scrollPos = (window.scrollY / (bodyEl.scrollHeight - window.innerHeight)) * 100;
-
-            barEl.style.width = `${scrollPos}%`;
-            requestAnimationFrame(updateBar);
-        };
-        updateBar();
-    </script>
-<!-- =========================== end =========================== -->
 </body>
 
-<script src="https://kit.fontawesome.com/58309639ce.js" crossorigin="anonymous"></script>
+
 
 </html>
