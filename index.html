@@ -29,8 +29,19 @@
             padding: 0;
         }
 
+        
+
     </style>
 
+
+ <!-- =========================== beta test 2 =========================== -->
+ <style !important>
+
+    .elementor-nav-menu--layout-horizontal{
+        padding: 10px;
+    }
+
+</style>
 
     <style !important>
 /* =========================== style.css =========================== */
@@ -437,9 +448,62 @@
         }
     </style>
 
+    <style>
+    /* =========================== notification =========================== */
+
+        .notification{
+
+            position: fixed;
+            text-align: center;
+            width: 100vw;
+            /* height: 90px; */
+            padding: 20px;
+            border-radius: 4px;
+            background-color:  #323334;
+            color: #fff;
+            box-shadow: 0 1px 10px rgba(0,0,0,.1);
+            transform: translateY(30px);
+            opacity: 0;
+            visibility: hidden;
+            animation: fade 6s linear forwards;
+            animation-delay: 5s;
+            z-index: 300;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            font-size: 24px;
+            color: crimson;
+        }
+
+        .progress{
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            width: 0;
+            height: 3px;
+            background-image: linear-gradient(to right, #95bfe5, #2b4f82);
+            /* background-image: linear-gradient(to right, #274b7f, #98c3e8); */
+            border-radius: 4px;
+            animation: progress 5s .5s linear forwards;
+            animation-delay: 5s;
+            z-index: 300;
+        }
+
+        @keyframes progress{
+            to{
+                width: calc(100% - 10px);
+                }
+            }
+    </style>
+
 </head>
 <body>   
     
+    <div class="notification">
+        <p>Strona jest w trakcie remontu :D. Prosimy o zrozumienie.</p> 
+        <span class="progress"></span>
+    </div>
+
     <section class="home" id="home">
         <div class="home-shadow">
             <div class="rudygamesv2-container">
