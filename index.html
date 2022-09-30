@@ -114,7 +114,7 @@
     .elementor-21973 .elementor-element.elementor-element-816675e .elementor-button, 
     .elementor-21973 .elementor-element.elementor-element-a2462d7 .elementor-button,
     .elementor-21973 .elementor-element.elementor-element-4c20dde .elementor-button {
-        background-color: #000000;;
+        background-color: #000000;
         background-image: none;
         width: 60%;
         margin: auto;
@@ -243,11 +243,31 @@
             color: white;
             background-color: crimson;
         }
+        .btn{
+            display: none;
+            padding: 20px;
+            color: white;
+            background-color: #000000;
+            font-size: 16px;
+            margin-top: 30px;
+            transition: 1s all;
+            cursor: pointer;
+        }
 
-        .cta{
+        .btn:hover{
+            background-color: crimson;
+            scale: 1.1;
+        }
+
+        .btn-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        /* .cta{
             color:linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
             animation: hue-rotate 3s linear infinite;
-        }
+        } */
 
         .home-image-license{
             display: block;
@@ -401,6 +421,7 @@
             justify-content: center;
             text-align: center;
             font-size: 10px;
+            color: #000000;
         }
 
 
@@ -658,8 +679,12 @@
                     <h3>Nazwisko - Pozycja</h3>
                 </a>
             </div>
-            <a class="atribute" href="https://mockupfree.co/product/free-soccer-jersey-mockup" target="_blank">Do zrobienia zdjęć koszulek był wykorzystany szablon od MockupFree.co</a>
-            
+            <a class="atribute" href="https://mockupfree.co/product/free-soccer-jersey-mockup" target="_blank">Do zrobienia zdjęć koszulek został wykorzystany szablon od MockupFree.co</a>
+            <div class="btn-box">
+                <a class="btn">tabela zprp małopolskiej ligi juniorów młodszych</a>
+                <a class="btn">tabela zprp małopolskiej ligi juniorów młodszych</a>
+                <a class="btn">tabela zprp małopolskiej ligi juniorów młodszych</a>
+            </div>
         </div>
     </section>
 </body>
